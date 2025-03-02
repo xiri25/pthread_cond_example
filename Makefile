@@ -22,6 +22,6 @@ run:
 	./main
 
 run-thread-check:
-	echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
+	#echo 0 | sudo tee /proc/sys/kernel/randomize_va_space
 	./main-thread-check
-	echo 2 | sudo tee /proc/sys/kernel/randomize_va_space  # Re-enable ASLR
+	#echo 2 | sudo tee /proc/sys/kernel/randomize_va_space  # Re-enable ASLR
